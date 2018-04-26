@@ -1,0 +1,77 @@
+{
+    "airports": [
+        {
+            "name": "Hyderabad, Rajiv Gandhi International Airport",
+            "itacode": "HYD",
+            "city": "Hyderabad",
+            "countryname": "India"
+        },
+        {
+            "name": "Delhi, Indira Gandhi International Airport",
+            "itacode": "DEL",
+            "city": "Delhi",
+            "countryname": "India"
+        },
+		 {
+            "name": "Chennai, Chennai International Airport",
+            "itacode": "MAA",
+            "city": "Chennai",
+            "countryname": "India"
+        },
+		 {
+            "name": "Banglore, Banglore International Airport",
+            "itacode": "BLR",
+            "city": "Banglore",
+            "countryname": "India"
+        },
+		 {
+            "name": "Cochin, Cochin International Airport",
+            "itacode": "COK",
+            "city": "Cochin",
+            "countryname": "India"
+        },
+		 {
+            "name": "Orlando, Orlando International Airport",
+            "itacode": "MCO",
+            "city": "Orlando",
+            "countryname": "USA"
+        },
+		 {
+            "name": "Boston, General Edward Lawrence Logan International Airport",
+            "itacode": "BOS",
+            "city": "Boston",
+            "countryname": "USA"
+        },
+		 {
+            "name": "Washington, Washington Dulles International Airport",
+            "itacode": "IAD",
+            "city": "Washington",
+            "countryname": "USA"
+        },
+		 {
+            "name": "Chicago, Chicago O’Hare International Airport",
+            "itacode": "ORD",
+            "city": "Chicago",
+            "countryname": "USA"
+        },
+		 {
+            "name": "New York, John F Kennedy International Airport",
+            "itacode": "JFK",
+            "city": "New York",
+            "countryname": "USA"
+        },
+		 {
+            "name": "San Francisco, San Francisco International Airport",
+            "itacode": "SFO",
+            "city": "San Francisco",
+            "countryname": "USA"
+        },
+		
+		 {
+            "name": "Las Vegas, McCarran International Airport",
+            "itacode": "LAS",
+            "city": "Las Vegas",
+            "countryname": "USA"
+        }
+    ]
+}
