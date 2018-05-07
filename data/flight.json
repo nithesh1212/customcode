@@ -1,12 +1,6 @@
 {
-            "id": "HYOR888",
-            "itacode_departure":"HYD",
-            "itacode_arrival":"MCO",
-            "departure_date": "2016-08-19",
-            "departure_time": "14:50",
-            "expected_arivaldate": "2016-08-20",
-            "expected_arivaltime": "19:30",
-			
+    "flight": [
+        {
             "class_price": [
                 {
                     "Class": "Economy",
@@ -20,5 +14,106 @@
                     "Class": "Business",
                     "price": "2,81,800"
                 }
-            ]
- }
+            ],
+            "departure_date": "2016-08-19",
+            "departure_time": "14:50",
+            "expected_arivaldate": "2016-08-20",
+            "expected_arivaltime": "19:30",
+            "id": "HYOR888",
+            "itacode_arrival": "MCO",
+            "itacode_departure": "HYD"
+        },
+        {
+            "class_price": [
+                {
+                    "Class": "Economy",
+                    "price": "89,870"
+                },
+                {
+                    "Class": "Premium Economy",
+                    "price": "1,08,400"
+                },
+                {
+                    "Class": "Business",
+                    "price": "3,81,798"
+                }
+            ],
+            "departure_date": "2016-08-21",
+            "departure_time": "18:50",
+            "expected_arivaldate": "2016-08-22",
+            "expected_arivaltime": "18:30",
+            "id": "MASF338",
+            "itacode_arrival": "SFO",
+            "itacode_departure": "MAA"
+        },
+        {
+            "class_price": [
+                {
+                    "Class": "Economy",
+                    "price": "91,280"
+                },
+                {
+                    "Class": "Premium Economy",
+                    "price": "1,98,909"
+                },
+                {
+                    "Class": "Business",
+                    "price": "3,08,880"
+                }
+            ],
+            "departure_date": "2016-08-21",
+            "departure_time": "13:50",
+            "expected_arivaldate": "2016-08-22",
+            "expected_arivaltime": "20:30",
+            "id": "BLRW833",
+            "itacode_arrival": "IAD",
+            "itacode_departure": "BLR"
+        },
+        {
+            "class_price": [
+                {
+                    "Class": "Economy",
+                    "price": "1,08,200"
+                },
+                {
+                    "Class": "Premium Economy",
+                    "price": "2,08,600"
+                },
+                {
+                    "Class": "Business",
+                    "price": "3,81,890"
+                }
+            ],
+            "departure_date": "2016-08-24",
+            "departure_time": "04:50",
+            "expected_arivaldate": "2016-08-24",
+            "expected_arivaltime": "18:30",
+            "id": "KOBO543",
+            "itacode_arrival": "BOS",
+            "itacode_departure": "COK"
+        },
+        {
+            "class_price": [
+                {
+                    "Class": "Economy",
+                    "price": "81,600"
+                },
+                {
+                    "Class": "Premium Economy",
+                    "price": "1,18,560"
+                },
+                {
+                    "Class": "Business",
+                    "price": "1,81,805"
+                }
+            ],
+            "departure_date": "2016-08-29",
+            "departure_time": "16:50",
+            "expected_arivaldate": "2016-08-30",
+            "expected_arivaltime": "18:30",
+            "id": "NDNY333",
+            "itacode_arrival": "JFK",
+            "itacode_departure": "DEL"
+        }
+    ]
+}
