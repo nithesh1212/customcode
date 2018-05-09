@@ -6,27 +6,32 @@ var rp = require('request-promise');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 	
+	
+	var msgId = req.query.msgId;
+	
+	
+	
 var options = {
-		method: 'POST',
-		uri: 'https://api.ciscospark.com/v1/memberships',
+		method: 'GET',
+		uri: 'https://api.ciscospark.com/v1/messages/'+msgId,
 		headers: {
-				'Content-Type': 'application/json',
-				'Authorization' : 'Bearer OTI1ZWMwNjQtOTBlOS00NGUzLWFiYWMtYjI1ZWFhNzZiZWY0NGVjNTQyMmUtNjFi'
+				
+				'Authorization' : 'Bearer N2U3MDhmMDQtNTFmOC00MmU1LWJjMjItZTQzMzczOWI5NDQwMjkzMjFlNGItODhi',
+				'content-type' : 'application/json'
 		},
-		body: {
-				"roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vMWRmNTNlNjAtMTE0NC0xMWU4LThjMTAtMTNjMDRhYWE1YTk3",
-				"personEmail": "vmasakat@cisco.com",
-				"isModerator": false
-		},
+		
 		json: true // Automatically stringifies the body to JSON
 	};
+	
+
  
 	rp(options)
     .then(function (parsedBody) {
        res.send(parsedBody);
     })
     .catch(function (err) {
-       res.send(err);
+	  res.send(err);
+	 
     });
 	
 
