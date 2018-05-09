@@ -1,41 +1,45 @@
 var express = require('express');
 var router = express.Router();
 var Store = require("jfs");
-var db = new Store("data",{pretty:true});
+var rp = require('request-promise');
 
-
-
-
-
-	router.post('/', function(req, res, next) {
-	var payload = req.body
-	var obj = db.getSync("book-a-flight");
-	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-    for( var i=0; i < 4; i++ ){
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
-
-	var result;
-	  obj.flight.map(function(flight){
-		  console.log(flight);
-    
-				flight.Id = payload.flightid;
-    			flight.bookingId = 'KL'+text;
-    			
-				flight.passengername = payload.name;
+/* GET users listing. */
+router.post('/', function(req, res, next) {
+	
+	
+	var msg = req.body.msg;
+	var email = req.body.email
+	
+	
+	
+var options = {
+		method: 'POST',
+		uri: 'https://api.ciscospark.com/v1/messages',
+		body :{
+				"toPersonEmail": email,
+				"text": msg
+				},
+		headers: {
 				
-    		    result = flight;
-    
-    	});
-      
-	  res.send(result);
-});
+				'Authorization' : 'Bearer N2U3MDhmMDQtNTFmOC00MmU1LWJjMjItZTQzMzczOWI5NDQwMjkzMjFlNGItODhi',
+				'content-type' : 'application/json'
+		},
+		
+		json: true // Automatically stringifies the body to JSON
+	};
 	
 
+ 
+	rp(options)
+    .then(function (parsedBody) {
+       res.send(parsedBody);
+    })
+    .catch(function (err) {
+	  res.send(err);
+	 
+    });
 	
-	
-	
+
+});
+
 module.exports = router;
